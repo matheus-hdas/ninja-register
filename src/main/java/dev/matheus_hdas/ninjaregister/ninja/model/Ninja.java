@@ -1,4 +1,4 @@
-package dev.matheus_hdas.ninjaregister.model;
+package dev.matheus_hdas.ninjaregister.ninja.model;
 
 import jakarta.persistence.*;
 
