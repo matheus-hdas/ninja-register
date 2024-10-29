@@ -1,5 +1,6 @@
 package dev.matheus_hdas.ninjaregister.ninja.model;
 
+import dev.matheus_hdas.ninjaregister.mission.model.Mission;
 import jakarta.persistence.*;
 
 import java.util.Objects;
@@ -19,6 +20,10 @@ public class Ninja {
 
     @Column
     private int age;
+
+    @ManyToOne
+    @JoinColumn(name = "id_mission")
+    private Mission mission;
 
     public Ninja(String name, String emal, int age) {
         this.name = name;

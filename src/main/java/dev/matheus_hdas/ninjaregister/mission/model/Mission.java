@@ -18,7 +18,7 @@ public class Mission {
     @Column
     private String rank;
 
-    @OneToMany
+    @OneToMany(mappedBy = "mission")
     private List<Ninja> ninjas;
 
 
