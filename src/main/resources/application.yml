@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ninjaregister
+  datasource:
+    url: ${DATABASE_URL}
+    driver: org.h2.Driver
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
