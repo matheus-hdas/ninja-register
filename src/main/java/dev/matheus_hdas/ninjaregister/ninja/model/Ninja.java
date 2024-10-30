@@ -27,6 +27,9 @@ public class Ninja {
     @Column
     private int age;
 
+    @Column(name = "img_url")
+    private String imgUrl;
+
     @ManyToOne
     @JoinColumn(name = "id_mission")
     private Mission mission;
