@@ -2,9 +2,7 @@ package dev.matheus_hdas.ninjaregister.ninja.model;
 
 import dev.matheus_hdas.ninjaregister.mission.model.Mission;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Objects;
 
