@@ -26,7 +26,7 @@ public class NinjaService {
 
     public Ninja update(Long id, Ninja updatedNinja) {
         Ninja ninja = ninjaRepository.findById(id).orElseThrow();
-        updatedNinja.setId(updatedNinja.getId());
+        updatedNinja.setId(ninja.getId());
         return ninjaRepository.save(updatedNinja);
     }
 
