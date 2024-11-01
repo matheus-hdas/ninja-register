@@ -8,9 +8,13 @@ spring:
     password: ${DATABASE_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
       show-sql: true
       dialect: org.hibernate.dialect.H2Dialect
   h2:
     console:
       enabled: true
+  flyway:
+    enable: true
+    locations: 'classpath:db/migrations'
+    baseline-on-migrate: true
