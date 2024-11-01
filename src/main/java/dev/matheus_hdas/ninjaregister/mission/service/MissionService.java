@@ -1,33 +1,45 @@
 package dev.matheus_hdas.ninjaregister.mission.service;
 
+import dev.matheus_hdas.ninjaregister.mission.mapper.MissionMapper;
 import dev.matheus_hdas.ninjaregister.mission.model.Mission;
+import dev.matheus_hdas.ninjaregister.mission.model.MissionDTO;
 import dev.matheus_hdas.ninjaregister.mission.repository.MissionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class MissionService {
     @Autowired
     private MissionRepository missionRepository;
 
-    public List<Mission> findAll() {
-        return missionRepository.findAll();
+    @Autowired
+    private MissionMapper missionMapper;
+
+    public List<MissionDTO> findAll() {
+        return missionRepository.findAll()
+                .stream()
+                .map(missionMapper::map)
+                .collect(Collectors.toList());
     }
 
-    public Mission findById(Long id) {
-        return missionRepository.findById(id).orElseThrow();
+    public MissionDTO findById(Long id) {
+        return missionMapper.map(
+                missionRepository.findById(id).orElseThrow());
     }
 
-    public Mission create(Mission data) {
-        return missionRepository.save(data);
+    public MissionDTO create(MissionDTO data) {
+        return missionMapper.map(
+                missionRepository.save(missionMapper.map(data)));
     }
 
-    public Mission update(Long id, Mission data) {
+    public MissionDTO update(Long id, MissionDTO data) {
         Mission mission = missionRepository.findById(id).orElseThrow();
         data.setId(mission.getId());
-        return missionRepository.save(data);
+        return missionMapper.map(
+                missionRepository.save(missionMapper.map(data)));
     }
 
     public void delete(Long id) {
