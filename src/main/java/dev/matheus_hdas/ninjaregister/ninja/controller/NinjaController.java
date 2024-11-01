@@ -1,6 +1,6 @@
 package dev.matheus_hdas.ninjaregister.ninja.controller;
 
-import dev.matheus_hdas.ninjaregister.ninja.model.Ninja;
+import dev.matheus_hdas.ninjaregister.ninja.model.NinjaDTO;
 import dev.matheus_hdas.ninjaregister.ninja.service.NinjaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,22 +16,22 @@ public class NinjaController {
     private NinjaService ninjaService;
 
     @GetMapping
-    public List<Ninja> findAll() {
+    public List<NinjaDTO> findAll() {
         return ninjaService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Ninja findById(@PathVariable Long id) {
+    public NinjaDTO findById(@PathVariable Long id) {
         return ninjaService.findById(id);
     }
 
     @PostMapping("/create")
-    public Ninja create(@RequestBody Ninja ninja) {
+    public NinjaDTO create(@RequestBody NinjaDTO ninja) {
         return ninjaService.create(ninja);
     }
 
     @PutMapping("/update/{id}")
-    public Ninja update(@PathVariable Long id, @RequestBody Ninja ninja) {
+    public NinjaDTO update(@PathVariable Long id, @RequestBody NinjaDTO ninja) {
         return ninjaService.update(id, ninja);
     }
 

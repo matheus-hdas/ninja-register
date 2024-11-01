@@ -1,11 +1,10 @@
 package dev.matheus_hdas.ninjaregister.mission.controller;
 
-import dev.matheus_hdas.ninjaregister.mission.model.Mission;
+import dev.matheus_hdas.ninjaregister.mission.model.MissionDTO;
 import dev.matheus_hdas.ninjaregister.mission.service.MissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,23 +15,28 @@ public class MissionController {
     @Autowired
     private MissionService missionService;
 
-    public List<Mission> findAll() {
+    @GetMapping("/list")
+    public List<MissionDTO> findAll() {
         return missionService.findAll();
     }
 
-    public Mission findById(Long id) {
+    @GetMapping("/{id}")
+    public MissionDTO findById(@PathVariable Long id) {
         return missionService.findById(id);
     }
 
-    public Mission create(Mission data) {
+    @PostMapping("/create")
+    public MissionDTO create(@RequestBody MissionDTO data) {
         return missionService.create(data);
     }
 
-    public Mission update(Long id, Mission data) {
+    @PutMapping("/update/{id}")
+    public MissionDTO update(@PathVariable Long id, @RequestBody MissionDTO data) {
         return missionService.update(id, data);
     }
 
-    public ResponseEntity<?> delete(Long id) {
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         missionService.delete(id);
         return ResponseEntity.ok().build();
     }
