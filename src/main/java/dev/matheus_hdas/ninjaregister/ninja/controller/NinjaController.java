@@ -31,7 +31,7 @@ public class NinjaController {
         return ResponseEntity.status(HttpStatus.CREATED).body(ninjaService.create(ninja));
     }
 
-    @PutMapping("/update/{id}")
+    @PatchMapping("/update/{id}")
     public ResponseEntity<NinjaDTO> update(@PathVariable Long id, @RequestBody NinjaDTO ninja) {
         return ResponseEntity.ok(ninjaService.update(id, ninja));
     }
