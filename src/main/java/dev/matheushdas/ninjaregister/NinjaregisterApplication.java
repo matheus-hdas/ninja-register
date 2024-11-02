@@ -1,4 +1,4 @@
-package dev.matheus_hdas.ninjaregister;
+package dev.matheushdas.ninjaregister;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

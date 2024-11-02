@@ -1,9 +1,9 @@
-package dev.matheus_hdas.ninjaregister.mission.service;
+package dev.matheushdas.ninjaregister.mission.service;
 
-import dev.matheus_hdas.ninjaregister.mission.mapper.MissionMapper;
-import dev.matheus_hdas.ninjaregister.mission.model.Mission;
-import dev.matheus_hdas.ninjaregister.mission.model.MissionDTO;
-import dev.matheus_hdas.ninjaregister.mission.repository.MissionRepository;
+import dev.matheushdas.ninjaregister.mission.mapper.MissionMapper;
+import dev.matheushdas.ninjaregister.mission.model.Mission;
+import dev.matheushdas.ninjaregister.mission.model.MissionDTO;
+import dev.matheushdas.ninjaregister.mission.repository.MissionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

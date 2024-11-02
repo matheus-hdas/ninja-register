@@ -1,6 +1,6 @@
-package dev.matheus_hdas.ninjaregister.mission.repository;
+package dev.matheushdas.ninjaregister.mission.repository;
 
-import dev.matheus_hdas.ninjaregister.mission.model.Mission;
+import dev.matheushdas.ninjaregister.mission.model.Mission;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

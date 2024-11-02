@@ -1,4 +1,4 @@
-package dev.matheus_hdas.ninjaregister;
+package dev.matheushdas.ninjaregister;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

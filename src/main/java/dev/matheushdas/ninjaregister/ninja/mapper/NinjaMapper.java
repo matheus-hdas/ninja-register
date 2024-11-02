@@ -1,7 +1,7 @@
-package dev.matheus_hdas.ninjaregister.ninja.mapper;
+package dev.matheushdas.ninjaregister.ninja.mapper;
 
-import dev.matheus_hdas.ninjaregister.ninja.model.Ninja;
-import dev.matheus_hdas.ninjaregister.ninja.model.NinjaDTO;
+import dev.matheushdas.ninjaregister.ninja.model.Ninja;
+import dev.matheushdas.ninjaregister.ninja.model.NinjaDTO;
 import org.springframework.stereotype.Component;
 
 @Component

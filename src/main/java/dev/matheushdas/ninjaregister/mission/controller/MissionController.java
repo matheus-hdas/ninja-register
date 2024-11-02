@@ -1,7 +1,7 @@
-package dev.matheus_hdas.ninjaregister.mission.controller;
+package dev.matheushdas.ninjaregister.mission.controller;
 
-import dev.matheus_hdas.ninjaregister.mission.model.MissionDTO;
-import dev.matheus_hdas.ninjaregister.mission.service.MissionService;
+import dev.matheushdas.ninjaregister.mission.model.MissionDTO;
+import dev.matheushdas.ninjaregister.mission.service.MissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

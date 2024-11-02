@@ -1,7 +1,6 @@
-package dev.matheus_hdas.ninjaregister.ninja.model;
+package dev.matheushdas.ninjaregister.ninja.model;
 
-import dev.matheus_hdas.ninjaregister.mission.model.Mission;
-import jakarta.persistence.*;
+import dev.matheushdas.ninjaregister.mission.model.Mission;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

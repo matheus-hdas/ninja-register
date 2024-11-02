@@ -1,7 +1,7 @@
-package dev.matheus_hdas.ninjaregister.ninja.controller;
+package dev.matheushdas.ninjaregister.ninja.controller;
 
-import dev.matheus_hdas.ninjaregister.ninja.model.NinjaDTO;
-import dev.matheus_hdas.ninjaregister.ninja.service.NinjaService;
+import dev.matheushdas.ninjaregister.ninja.model.NinjaDTO;
+import dev.matheushdas.ninjaregister.ninja.service.NinjaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

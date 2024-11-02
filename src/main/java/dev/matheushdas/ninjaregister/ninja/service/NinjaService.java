@@ -1,13 +1,12 @@
-package dev.matheus_hdas.ninjaregister.ninja.service;
+package dev.matheushdas.ninjaregister.ninja.service;
 
-import dev.matheus_hdas.ninjaregister.ninja.mapper.NinjaMapper;
-import dev.matheus_hdas.ninjaregister.ninja.model.Ninja;
-import dev.matheus_hdas.ninjaregister.ninja.model.NinjaDTO;
-import dev.matheus_hdas.ninjaregister.ninja.repository.NinjaRepository;
+import dev.matheushdas.ninjaregister.ninja.mapper.NinjaMapper;
+import dev.matheushdas.ninjaregister.ninja.model.Ninja;
+import dev.matheushdas.ninjaregister.ninja.model.NinjaDTO;
+import dev.matheushdas.ninjaregister.ninja.repository.NinjaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

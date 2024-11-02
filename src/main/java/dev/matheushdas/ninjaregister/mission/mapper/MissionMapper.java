@@ -1,7 +1,7 @@
-package dev.matheus_hdas.ninjaregister.mission.mapper;
+package dev.matheushdas.ninjaregister.mission.mapper;
 
-import dev.matheus_hdas.ninjaregister.mission.model.Mission;
-import dev.matheus_hdas.ninjaregister.mission.model.MissionDTO;
+import dev.matheushdas.ninjaregister.mission.model.Mission;
+import dev.matheushdas.ninjaregister.mission.model.MissionDTO;
 import org.springframework.stereotype.Component;
 
 @Component
