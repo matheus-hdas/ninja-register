@@ -32,7 +32,7 @@ public class MissionController {
                 .body(missionService.create(data));
     }
 
-    @PutMapping("/update/{id}")
+    @PatchMapping("/update/{id}")
     public ResponseEntity<MissionDTO> update(@PathVariable Long id, @RequestBody MissionDTO data) {
         return ResponseEntity.ok(missionService.update(id, data));
     }
